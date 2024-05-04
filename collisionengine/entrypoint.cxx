@@ -151,21 +151,23 @@ __singleton __nothrow std::int32_t __stackcall main() noexcept {
     std::cout << "[+] Checking for hash collisions in all potential 16-bit values... " << std::endl;
 
     const auto collision_inlined_test = [
-
+        
         &hash_collection_32,
-            &hash_collection_64,
-            &hash_collection_CRC,
-            &collision_counter32,
-            &collision_counter64,
-            &collision_counterCRC,
-            &collisions_detected_vector32,
-            &collisions_detected_vector64,
-            &collisions_detected_vectorCRC
+        &hash_collection_64,
+        &hash_collection_CRC,
+        &collision_counter32,
+        &collision_counter64,
+        &collision_counterCRC,
+        &collisions_detected_vector32,
+        &collisions_detected_vector64,
+        &collisions_detected_vectorCRC
+
     ](
 
         const std::int32_t collision_list_index,
         std::int32_t& ii,
         std::int32_t& xx
+
         ) noexcept {   //  0 = 32, 1 = 64, 2 = crc32
 
             switch (collision_list_index) {
