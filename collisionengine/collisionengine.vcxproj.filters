@@ -27,4 +27,13 @@
       <Filter>Docs</Filter>
     </Image>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="..\.gitattributes" />
+    <None Include="..\.gitignore" />
+    <None Include="..\README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\BOOST_LICENSE.txt" />
+    <Text Include="..\QENGINE_LICENSE.txt" />
+  </ItemGroup>
 </Project>
