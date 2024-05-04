@@ -99,8 +99,7 @@ typedef struct collision_t {
         index_y = std::move(yy);
     }
 };
-__singleton __nothrow std::int32_t __stackcall main() noexcept
-{
+__singleton __nothrow std::int32_t __stackcall main() noexcept {
 
     std::uint8_t ub = 0x0;
     std::uint16_t us = 0x0;
@@ -114,7 +113,7 @@ __singleton __nothrow std::int32_t __stackcall main() noexcept
 
 #pragma region Algorithm(s) output generation
 
-    std::cout << "[+] Generating hashes for all potential 16-bit values..." << std::endl;
+    std::cout << "[+] Generating hashes for all potential 16-bit data values..." << std::endl;
 
     for (auto i = 0; i <= USHORT_MAX; ++i) {
 
@@ -289,13 +288,19 @@ __singleton __nothrow std::int32_t __stackcall main() noexcept
         }
     }
 
-#define STDOUT_PRINTBLOCK_SEPERATOR() for(std::int32_t __iter__ = 0; __iter__ < 3; ++__iter__)std::cout << "[--------------------------------------------------------------------------------------]" << std::endl;
+#pragma region Macros
 
 #define SAVE_STDOUT_FLAGS( __obj__ ) __obj__ = std::cout.flags()
 
 #define SET_STDOUT_INTEGRAL( __obj__ ) std::cout.flags(__obj__)
 
 #define PRINT_HEXADECIMAL std::hex << std::noshowbase
+
+#define STDOUT_PRINTBLOCK_SEPERATOR() for(std::int32_t __iter__ = 0; __iter__ < 3; ++__iter__)std::cout << "[--------------------------------------------------------------------------------------]" << std::endl;
+
+#pragma endregion
+
+    STDOUT_PRINTBLOCK_SEPERATOR();
 
     std::cout << "[+] Done, qhash32 collision counter: " << collision_counter32 << std::endl;
 
@@ -351,4 +356,6 @@ __singleton __nothrow std::int32_t __stackcall main() noexcept
 #pragma endregion
 
     std::cin.get();
+
+    return 0;
 }
