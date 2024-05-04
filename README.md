@@ -5,7 +5,7 @@
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 <details>
-<summary> collisionengine - qhash32 / qhash64 / [CRC-32 (Cyclic Redundancy Check 32)](https://github.com/boostorg/crc/blob/13f9200ecacb011ba52bc3b0bea7955634de1499/include/boost/crc.hpp) security testing and comparison  </summary>
+<summary> collisionengine - Security Testing of the  qhash32 / qhash64 / CRC-32 (Cyclic Redundancy Check 32)  Algorithm's  </summary>
 
 collisionengine is an project which was created to test the security and accuracy of the qhash32 / qhash64 algorithm(s) and test their efficacy against the CRC32 algorithm as implemented in the [Boost Project](https://github.com/boostorg/boost) (license attached)
 
