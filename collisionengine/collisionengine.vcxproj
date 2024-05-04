@@ -151,9 +151,6 @@
     <ClCompile Include="entrypoint.cxx" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="..\IMG\output.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="..\.gitattributes" />
     <None Include="..\.gitignore" />
     <None Include="..\README.md" />
@@ -161,6 +158,9 @@
   <ItemGroup>
     <Text Include="..\BOOST_LICENSE.txt" />
     <Text Include="..\QENGINE_LICENSE.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\img\output.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
