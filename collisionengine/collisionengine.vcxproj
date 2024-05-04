@@ -150,6 +150,9 @@
   <ItemGroup>
     <ClCompile Include="entrypoint.cxx" />
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\IMG\output.png" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
