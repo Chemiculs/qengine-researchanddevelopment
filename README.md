@@ -1,11 +1,18 @@
-# qengine - Research and Development
+<p align="center">
+  <img src="https://i.imgur.com/vKDluJm.png" alt="qengine">
+</p>
+<p align="center" style="font-size: 20px; font-weight: bold;">
+                                         		qengine - Research and Development 
+</p>
 
 ## This is the Research & Development branch of the qengine project which consists of a single visual studio solution currently containing projects which test the security of different features of qengine and attempt to descript the output produced by the engine.
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 <details>
-<summary> collisionengine - Security Testing of the  qhash32 / qhash64 / CRC-32 (Cyclic Redundancy Check 32)  Algorithm's  </summary>
+<summary> collisionengine - POC Security Testing qhash32 / qhash64 / CRC-32 Algorithm's  </summary>
+
+
 
 collisionengine is an project which was created to test the security and accuracy of the qhash32 / qhash64 algorithm(s) as implemented in [qengine](https://github.com/Chemiculs/qengine) and test their efficacy against the CRC32 algorithm as implemented in the [Boost Project](https://github.com/boostorg/boost) (license attached) -
 
