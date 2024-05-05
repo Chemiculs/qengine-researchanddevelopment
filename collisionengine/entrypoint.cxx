@@ -25,7 +25,6 @@ using namespace qengine;
 
 #pragma endregion
 
-
 /*
 8-bit unsigned integer (unsigned char): Maximum value is 255
 16-bit unsigned integer (unsigned short): Maximum value is 65,535
@@ -45,7 +44,6 @@ using namespace qengine;
 
 #pragma endregion
 
-
 #pragma region Globals
 
 static void* data_ptr;
@@ -53,6 +51,7 @@ static size_t data_size;
 static std::thread data_thread;
 
 bool thread_state_flag = true;
+
 #pragma endregion
 
 __singleton __nothrow void __stackcall data_collision_thread() noexcept {
