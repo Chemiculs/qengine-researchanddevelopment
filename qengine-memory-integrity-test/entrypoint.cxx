@@ -18,7 +18,7 @@ using namespace qengine;
 
 #pragma region Callback Functions
 
-__singleton __nothrow void __regcall violation_callback(qexcept::q_rogueaccess except, void* data) noexcept {
+__singleton void __regcall violation_callback(qexcept::q_rogueaccess except, void* data) noexcept {
 
 	if (except.id != qexcept::MEMORY_ALTERATION) // ensure this callback has been raised due to memory alteration
 		return;
@@ -36,7 +36,7 @@ __singleton __nothrow void __regcall violation_callback(qexcept::q_rogueaccess e
 
 #pragma region EP fn
 
-__singleton __nothrow std::int32_t __stackcall main() noexcept {
+__singleton std::int32_t __stackcall main() noexcept {
 
 	qtype_enchash::init_qtype_hash(&violation_callback); // assign our callback function to the namespace - all instances will refer to this callback if they detect a violation
 

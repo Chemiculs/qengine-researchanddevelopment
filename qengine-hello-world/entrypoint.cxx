@@ -18,7 +18,7 @@ using namespace qengine;
 
 #pragma region EP fn
 
-__nothrow __singleton std::int32_t __stackcall main() noexcept {	//	explicit declarators are used as the point of this project is explicit communication with the compiler, however these are not required
+__singleton std::int32_t __stackcall main() noexcept {	//	explicit declarators are used as the point of this project is explicit communication with the compiler, however these are not required
 
 	qtype_enc::qe_string my_string_e("Hello World!");
 

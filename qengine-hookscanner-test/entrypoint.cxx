@@ -6,7 +6,7 @@ using namespace qengine;
 
 #pragma region Placeholder Methods
 
-static __singleton __nothrow void __regcall myimportantmethod(long long val) noexcept { // add junk code to our dummy method to increase it's size in memory to be viable for hook placement
+static __singleton void __regcall myimportantmethod(long long val) noexcept { // add junk code to our dummy method to increase it's size in memory to be viable for hook placement
 
 	auto j = std::chrono::high_resolution_clock::now().time_since_epoch().count();
 
@@ -19,14 +19,14 @@ static __singleton __nothrow void __regcall myimportantmethod(long long val) noe
 
 #pragma region Callback Methods
 
-__singleton __nothrow void __stackcall callback(qexcept::q_fn_alteration alteration) noexcept {	//	callbacks are never inlined nor inlineable, therefore in this example i am explicitly declaring these things
+__singleton void __stackcall callback(qexcept::q_fn_alteration alteration) noexcept {	//	callbacks are never inlined nor inlineable, therefore in this example i am explicitly declaring these things
 
 	if (alteration.id != qexcept::HOOK_DETECTED)
 		return;
 
 	if (!alteration.violation_object_)
 		return;	//	duhh
-
+	
 	auto casted_arg = reinterpret_cast<qhook::qhook_detection_t*>(alteration.violation_object_);
 
 	std::cout << "Function hook detected, address: " << std::hex << casted_arg->hook_address << std::endl;

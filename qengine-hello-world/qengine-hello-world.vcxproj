@@ -72,8 +72,8 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <IncludePath>C:\Users\laneg\Documents\qengine_pubrelease_test\qengine-main\src;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\laneg\Documents\qengine_pubrelease_test\qengine-main\src\qengine\extern;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Users\laneg\Documents\qengine_pubrelease_final_testing\qengine-main\src;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\laneg\Documents\qengine_pubrelease_final_testing\qengine-main\src\qengine\extern;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -124,12 +124,14 @@
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>C:\Users\laneg\Documents\qengine_pubrelease_final_testing\qengine-main\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\laneg\Documents\qengine_pubrelease_final_testing\qengine-main\src\qengine\extern;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>

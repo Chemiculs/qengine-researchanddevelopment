@@ -18,7 +18,7 @@ using namespace qengine;
 
 #pragma region EP fn
 
-__singleton __nothrow std::int32_t __stackcall main() noexcept {
+__singleton std::int32_t __stackcall main() noexcept {
 
 	// You do not have to use all of the below functions, however analyze_executable_sections() must be called before morph_executable_sections(), and this must be called before manipulating headers as it depends on information from the headers to perform analyzation
 
