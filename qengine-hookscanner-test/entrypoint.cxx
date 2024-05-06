@@ -43,7 +43,7 @@ __singleton void __stackcall callback(qexcept::q_fn_alteration alteration) noexc
 
 #pragma region EP fn
 
-__singleton __nothrow std::int32_t __stackcall main() noexcept {
+__singleton  std::int32_t __stackcall main() noexcept {
 
 	std::cout << "initializing hook scanner..." << std::endl;
 
