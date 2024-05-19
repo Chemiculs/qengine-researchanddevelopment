@@ -6,7 +6,7 @@ using namespace qengine;
 
 #pragma region Placeholder Methods
 
-static __singleton void __regcall myimportantmethod(long long val) noexcept { // add junk code to our dummy method to increase it's size in memory to be viable for hook placement
+static __singleton void __regcall myimportantmethod(std::uintptr_t val) noexcept { // add junk code to our dummy method to increase it's size in memory to be viable for hook placement
 
 	auto j = std::chrono::high_resolution_clock::now().time_since_epoch().count();
 

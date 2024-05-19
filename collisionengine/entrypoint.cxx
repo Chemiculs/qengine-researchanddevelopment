@@ -358,5 +358,5 @@ __singleton std::int32_t __stackcall main() noexcept {
 
         std::cin.get();
 
-        return 0;
+        return static_cast<std::int32_t>(NULL);
 }
