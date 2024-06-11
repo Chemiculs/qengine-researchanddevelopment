@@ -10,6 +10,8 @@
 
 #include <qengine/engine/qengine.hpp>
 
+#pragma region Using Directives
+
 using namespace qengine;
 
 #pragma endregion
@@ -20,11 +22,11 @@ using namespace qengine;
 
 __singleton std::int32_t __stackcall main() noexcept {	//	explicit declarators are used as the point of this project is explicit communication with the compiler, however these are not required
 
-	qtype_enc::qe_string my_string_e("Hello World!");
+	qtype_enc::qe_string my_string_e(QSTR("Hello World!"));
 
-	qtype_hash::qh_string my_string_h("Hello World!");
+	qtype_hash::qh_string my_string_h(QSTR("Hello World!"));
 
-	qtype_enchash::qeh_string my_string_eh("Hello World!");
+	qtype_enchash::qeh_string my_string_eh(QSTR("Hello World!"));
 
 	std::cout << my_string_e.get() << std::endl;
 

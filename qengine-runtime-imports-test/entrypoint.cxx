@@ -20,6 +20,7 @@ using namespace qengine;
 #pragma region EP fn
 
 __singleton std::int32_t __stackcall main() noexcept {
+
 	// Return type is NTSTATUS (template parameter)
 	// Argument 1 is the library name (wide / ansi char depend on charset)
 	// Argument 2 is name of function or ordinal number

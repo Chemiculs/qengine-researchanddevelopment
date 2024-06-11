@@ -38,11 +38,11 @@ __singleton void __regcall violation_callback(qexcept::q_rogueaccess except, voi
 
 __singleton std::int32_t __stackcall main() noexcept {
 
-	qtype_enchash::init_qtype_hash(&violation_callback); // assign our callback function to the namespace - all instances will refer to this callback if they detect a violation
+	qtype_enchash::init_qtype_hash( &violation_callback ); // assign our callback function to the namespace - all instances will refer to this callback if they detect a violation
 
 	qtype_enchash::qeh_int32 MyInteger(999); // instance a hash-checked integer and set its value to 999
 
-	(*static_cast<std::uint32_t*>(MyInteger.get_raw_memory_address())) = 998; // use the built-in illegal-accessor for this example to modify the value of the data and trigger our callback
+	(*const_cast<std::uint32_t*>(static_cast<const std::uint32_t*>(MyInteger.get_raw_memory_address()))) = 998; // use the built-in illegal-accessor for this example to modify the value of the data and trigger our callback
 
 	int32_t value = MyInteger; // store the value held within MyInteger in a normal primitive variable to invoke get() (get() is when the check will occur)
 

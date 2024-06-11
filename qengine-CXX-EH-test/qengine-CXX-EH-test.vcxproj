@@ -71,8 +71,8 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <LibraryPath>C:\Users\laneg\Documents\qengine_pubrelease_final_testing\qengine-main\src\qengine\extern;$(LibraryPath)</LibraryPath>
-    <IncludePath>C:\Users\laneg\Documents\qengine_pubrelease_test\qengine-main\src;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\laneg\Documents\VSCode\CXX\qengine\qengine\src\qengine\extern;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Users\laneg\Documents\VSCode\CXX\qengine\qengine\src;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>

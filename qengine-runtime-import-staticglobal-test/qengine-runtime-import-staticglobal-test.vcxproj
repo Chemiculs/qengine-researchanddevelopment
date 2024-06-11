@@ -71,8 +71,8 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <ExternalIncludePath>C:\Users\laneg\Documents\qengine_pubrelease_final_testing\qengine-main\src;$(ExternalIncludePath)</ExternalIncludePath>
-    <LibraryPath>C:\Users\laneg\Documents\qengine_pubrelease_final_testing\qengine-main\src\qengine\extern;$(LibraryPath)</LibraryPath>
+    <ExternalIncludePath>C:\Users\laneg\Documents\VSCode\CXX\qengine\qengine\src;$(ExternalIncludePath)</ExternalIncludePath>
+    <LibraryPath>C:\Users\laneg\Documents\VSCode\CXX\qengine\qengine\src\qengine\extern;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -123,7 +123,7 @@
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <AdditionalIncludeDirectories>C:\Users\laneg\Documents\qengine_pubrelease_final_testing\qengine-main\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\laneg\Documents\VSCode\CXX\qengine\qengine\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
     </ClCompile>
     <Link>
@@ -131,7 +131,7 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\Users\laneg\Documents\qengine_pubrelease_final_testing\qengine-main\src\qengine\extern;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Users\laneg\Documents\VSCode\CXX\qengine\qengine\src\qengine\extern;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>

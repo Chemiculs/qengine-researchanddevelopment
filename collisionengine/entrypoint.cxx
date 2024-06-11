@@ -120,9 +120,9 @@ __singleton std::int32_t __stackcall main() noexcept {
 
         const auto& hash64 = qhash::qhash64(&us, sizeof(us));
 
-        hash_collection_32.push_back(hash32.hash);
+        hash_collection_32.push_back(hash32);
 
-        hash_collection_64.push_back(hash64.hash);
+        hash_collection_64.push_back(hash64);
 
         crc32_inst.process_bytes(&us, sizeof(us));
 
