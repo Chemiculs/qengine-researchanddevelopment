@@ -8,7 +8,7 @@ using namespace qengine;
 
 #define PRINT_HEXADECIMAL std::hex << std::noshowbase
 
-#define STDOUT_PRINTBLOCK_SEPERATOR() std::cout << "\n[--------------------------------------------------------------------------------------]" << std::endl;
+#define STDOUT_PRINTBLOCK_SEPERATOR() std::cout << "\n\n<-------------------------------------------------------------------------------------->\n\n";
 
 #pragma endregion
 
