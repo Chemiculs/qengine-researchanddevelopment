@@ -34,6 +34,16 @@ __singleton std::int32_t __stackcall main() noexcept {	//	explicit declarators a
 
 	std::cout << my_string_eh.get() << std::endl;
 
+	srand(std::chrono::high_resolution_clock().now().time_since_epoch().count());
+
+	auto x = __RAND__(UINT16_MAX, 0);
+
+	auto y = __RAND__(UINT16_MAX, 0);
+
+	auto z = __RAND__(UINT16_MAX, 0);
+
+	std::cout << x << ", " << y << ", " << z << std::endl;
+
 	std::cin.get();
 
 	return static_cast<std::int32_t>(NULL);

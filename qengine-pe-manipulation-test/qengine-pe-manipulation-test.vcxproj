@@ -75,7 +75,7 @@
     <IncludePath>C:\Users\laneg\Documents\VSCode\CXX\qengine\qengine\src;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <LibraryPath>$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86)</LibraryPath>
+    <LibraryPath>$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);C:\Users\laneg\Documents\VSCode\CXX\qengine\qengine\src\qengine\extern</LibraryPath>
     <IncludePath>C:\Users\laneg\Documents\VSCode\CXX\qengine\qengine\src;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">

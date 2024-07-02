@@ -41,7 +41,7 @@ __singleton std::int32_t __stackcall main() noexcept {
 	int x = 1;
 	int y = 1;
 
-	qcritical::SCRAMBLE_CRITICAL_CONDITION(
+	qengine::qcritical::SCRAMBLE_CRITICAL_CONDITION(
 		&true_,				// callback if condition evaluates to TRUE
 		&false_,			// callback if condition evaluates to FALSE
 		std::tuple<>{},     // arguments (if any) for TRUE evaluated callback (our callback has no arguments)
