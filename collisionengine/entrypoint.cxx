@@ -297,7 +297,7 @@ __singleton std::int32_t __stackcall main() noexcept {
 
 #define PRINT_HEXADECIMAL std::hex << std::noshowbase
 
-#define STDOUT_PRINTBLOCK_SEPERATOR() for(std::int32_t __iter__ = 0; __iter__ < 3; ++__iter__)std::cout << "[--------------------------------------------------------------------------------------]" << std::endl;
+#define STDOUT_PRINTBLOCK_SEPERATOR() for(std::int32_t __iter__ = 0; __iter__ < 3; ++__iter__)std::cout << "\n[--------------------------------------------------------------------------------------]\n";
 
 #pragma endregion
 
