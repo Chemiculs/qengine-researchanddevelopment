@@ -14,7 +14,7 @@ using namespace qengine;
 
 #pragma region Placeholder Methods
 
-static __singleton void __regcall myimportantmethod(std::uintptr_t val) noexcept { // add junk code to our dummy method to increase it's size in memory to be viable for hook placement
+static __symbolic void __regcall myimportantmethod(std::uintptr_t val) noexcept { // add junk code to our dummy method to increase it's size in memory to be viable for hook placement
 
 	auto j = std::chrono::high_resolution_clock::now().time_since_epoch().count();
 
@@ -27,7 +27,7 @@ static __singleton void __regcall myimportantmethod(std::uintptr_t val) noexcept
 
 #pragma region Callback Methods
 
-__singleton void __stackcall print_hook_details(qengine::qhook::qhook_detection_t* detection) noexcept {	//	callbacks are never inlined nor inlineable, therefore in this example i am explicitly declaring these things
+__symbolic void __stackcall print_hook_details(qengine::qhook::qhook_detection_t* detection) noexcept {	//	callbacks are never inlined nor inlineable, therefore in this example i am explicitly declaring these things
 
 	STDOUT_PRINTBLOCK_SEPERATOR();
 
@@ -45,7 +45,7 @@ __singleton void __stackcall print_hook_details(qengine::qhook::qhook_detection_
 
 #pragma region EP fn
 
-__singleton std::int32_t __stackcall main() noexcept {
+__symbolic std::int32_t __stackcall main() noexcept {
 
 	std::cout << "\n[+] Analyzing function length..." << std::endl;
 

@@ -18,7 +18,7 @@ using namespace qengine;
 
 #pragma region EP fn
 
-__singleton std::int32_t __stackcall main() noexcept {	//	CXX exceptions are not used
+__symbolic std::int32_t __stackcall main() noexcept {	//	CXX exceptions are not used
 
 	WINAPI_SEH_INIT();
 

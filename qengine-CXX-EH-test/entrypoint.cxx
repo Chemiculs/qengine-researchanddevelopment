@@ -18,7 +18,7 @@ using namespace qengine;
 
 #pragma region EP fn
 
-__singleton std::int32_t __stackcall main() {    //  Windows SEH is not used 
+__symbolic std::int32_t __stackcall main() {    //  Windows SEH is not used 
 
     CXX_EH_INIT();  //  initialize CXX exception handler
 

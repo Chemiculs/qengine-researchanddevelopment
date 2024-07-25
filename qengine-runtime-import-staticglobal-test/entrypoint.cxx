@@ -25,7 +25,7 @@ static const auto imp_MessageBoxA = qimport::qimp::get_fn_import_object<NTSTATUS
 
 #pragma region EP fn
 
-__singleton std::int32_t __stackcall main() noexcept {
+__symbolic std::int32_t __stackcall main() noexcept {
 
 	auto status = imp_MessageBoxA(NULL, "Hello World!", "Hello World!", NULL); // call MessageBoxA and assign it's status return to a local 
 

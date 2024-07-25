@@ -12,7 +12,7 @@ typedef struct MYSTRUCT {
 
 #define STDOUT_PRINTBLOCK_SEPERATOR() std::cout << "\n\n<-------------------------------------------------------------------------------------->\n\n";
 
-__singleton void __regcall violation_callback(qengine::qexcept::q_rogueaccess except, void* data) noexcept {
+__symbolic void __regcall violation_callback(qengine::qexcept::q_rogueaccess except, void* data) noexcept {
 
 	if (except.id != qengine::qexcept::MEMORY_ALTERATION) // ensure this callback has been raised due to memory alteration
 		return;
@@ -26,7 +26,7 @@ __singleton void __regcall violation_callback(qengine::qexcept::q_rogueaccess ex
 	//Here you would normally flag the user for a ban/violation of contract or force-quit the application as a security breach has obviously occured
 }
 
-int main() nex {
+__symbolic std::int32_t __stackcall main() nex {
 
 	qengine::qtype_hash::init_hash_t(&violation_callback);
 

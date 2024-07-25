@@ -54,7 +54,7 @@ bool thread_state_flag = true;
 
 #pragma endregion
 
-__singleton void __stackcall data_collision_thread() noexcept {
+__symbolic void __stackcall data_collision_thread() noexcept {
 
     bool hasreset = false; // if / when generated data sets exceeds 18446744073709551615 we need to know so dataset size does not drop down to lower size 
 
@@ -98,7 +98,7 @@ typedef struct collision_t {
         index_y = std::move(yy);
     }
 };
-__singleton std::int32_t __stackcall main() noexcept {
+__symbolic std::int32_t __stackcall main() noexcept {
 
     std::uint8_t ub = 0x0;
     std::uint16_t us = 0x0;

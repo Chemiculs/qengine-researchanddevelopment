@@ -26,7 +26,7 @@ qimutexpr_stack(std::uint32_t, const_2, 666);
 
 #pragma region EP fn
 
-__singleton std::int32_t __stackcall main() noexcept {	//	explicit declarators are used as the point of this project is explicit communication with the compiler, however these are not required
+__symbolic std::int32_t __stackcall main() noexcept {	//	explicit declarators are used as the point of this project is explicit communication with the compiler, however these are not required
 
 	// The QSTR macro, as qconstexpr, creates a decryption proxy for the raw CSTRING argument
 	qtype_enc::qe_string my_string_e(QSTR("Hello World!"));
@@ -44,8 +44,6 @@ __singleton std::int32_t __stackcall main() noexcept {	//	explicit declarators a
 	std::cout << const_1 << std::endl;
 
 	std::cout << (std::uint32_t)const_2 << std::endl;
-
-	std::cin.get();
 
 	return static_cast<std::int32_t>(NULL);
 }

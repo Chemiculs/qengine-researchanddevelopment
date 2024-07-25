@@ -18,14 +18,14 @@ using namespace qengine;
 
 #pragma region Callback Methods
 
-static __singleton void true_() noexcept {	//	callback functions shall never be inlined and should always be explicitly declared as a singleton point of execution, intentions are very important to know
+static __symbolic void true_() noexcept {	//	callback functions shall never be inlined and should always be explicitly declared as a singleton point of execution, intentions are very important to know
 
 	std::cout << "condition is true" << std::endl;
 
 	std::cin.get();
 }
 
-static __singleton void false_() noexcept {
+static __symbolic void false_() noexcept {
 
 	std::cout << "condition is false" << std::endl;
 
@@ -36,7 +36,7 @@ static __singleton void false_() noexcept {
 
 #pragma region EP fn
 
-__singleton std::int32_t __stackcall main() noexcept {
+__symbolic std::int32_t __stackcall main() noexcept {
 
 	int x = 1;
 	int y = 1;
