@@ -128,6 +128,8 @@ __symbolic std::int32_t __stackcall main() noexcept {
 
         const std::uint32_t& crcsum = crc32_inst.checksum();
 
+        crc32_inst.reset();
+
         hash_collection_CRC.push_back(crcsum);
 
         ++us;
